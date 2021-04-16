@@ -12,6 +12,12 @@
 
     background-color: white;
     z-index: 1;
+    transition: 0.3s;
+}
+
+.product:hover{
+    transform: scale(1.04);
+    
 }
 
 .product > img {

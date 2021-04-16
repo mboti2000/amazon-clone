@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import Product from './Product';
+import { useStateValue } from './StateProvider';
+
 
 const Home = () =>{
+    const [{ basket, user }, dispatch] = useStateValue();
+
     return(
         <div className="home">
             <div className="home__container">
@@ -58,6 +62,8 @@ const Home = () =>{
                          rating={4}
                     />
                 </div>
+
+            
             </div>
 
             
